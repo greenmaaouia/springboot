@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 public class Application {
 
+	// Este comentario se añade dentro de: jgitflow:release-start
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }

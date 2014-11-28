@@ -88,24 +88,23 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+		    <plugin>
+		        <groupId>external.atlassian.jgitflow</groupId>
+		        <artifactId>jgitflow-maven-plugin</artifactId>
+		        <version>1.0-m4.3</version>
+				<configuration>
+					<flowInitContext>
+						<masterBranchName>master</masterBranchName>
+					 	<developBranchName>development</developBranchName>
+					 	<featureBranchPrefix>feature-</featureBranchPrefix>
+					 	<releaseBranchPrefix>release-</releaseBranchPrefix>
+					 	<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+					 	<versionTagPrefix>blither-</versionTagPrefix>
+				   	</flowInitContext>
+				</configuration>
+		    </plugin>
 		</plugins>
-
-        <plugin>
-            <groupId>external.atlassian.jgitflow</groupId>
-            <artifactId>jgitflow-maven-plugin</artifactId>
-            <version>1.0-m4.3</version>
-			<configuration>
-				<flowInitContext>
-					<masterBranchName>master</masterBranchName>
-				 	<developBranchName>development</developBranchName>
-				 	<featureBranchPrefix>feature-</featureBranchPrefix>
-				 	<releaseBranchPrefix>release-</releaseBranchPrefix>
-				 	<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
-				 	<versionTagPrefix>blither-</versionTagPrefix>
-			   	</flowInitContext>
-			</configuration>
-        </plugin>
-
 	</build>
 
 </project>
